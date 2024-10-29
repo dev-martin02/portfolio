@@ -5,15 +5,6 @@
   box-sizing: border-box;
 }
 
-.highlight {
-  color: #0f8adca6;
-  font-weight: bold;
-}
-.highlightP {
-  color: #7c0fdca6;
-  font-weight: bold;
-}
-
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -64,7 +55,8 @@ main {
 /* Hero Section */
 #heroSection {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   margin-bottom: 4rem;
 }
 
@@ -72,8 +64,15 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
+
+#heroContent {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -81,61 +80,24 @@ img {
   border-radius: 20px;
 }
 
-.imgContainer {
-  width: 8rem;
-  height: 10rem;
-}
-
-#bannerImg {
-  object-fit: cover;
-  border-radius: 10%;
-}
-
-#availabilityBanner {
-  display: flex;
-  border: 2px solid #2ecc71;
-  padding: 0.2rem 0.7rem;
-  border-radius: 50px;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: #2ecc71;
-}
-
-#specialDot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #2ecc71;
-  border-radius: 50%;
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
-  }
-}
-
 #heroSection h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #2c3e50;
 }
 
 #heroSection p,
 #heroSection p span {
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.contactMeBtn {
+  font-size: medium;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
 }
 
 button {
@@ -148,6 +110,7 @@ button {
   padding: 0.2rem 0.7rem;
   border-radius: 5px;
   cursor: pointer;
+  width: 8rem;
   transition: background-color 0.3s ease;
 }
 
@@ -199,44 +162,6 @@ button:hover {
   color: #2c3e50;
 }
 
-.projectTag {
-  display: flex;
-}
-
-.projectBanner {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  border: 1px solid #3498db;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-  color: #3498db;
-}
-
-.tailwind {
-  background-color: #30abe3;
-  border: 1px solid #30abe3;
-  color: white;
-}
-.react {
-  background-color: #1ab5f8;
-  border: 1px solid #1ab5f8;
-  color: white;
-}
-.node {
-  background-color: #2bad2b;
-  border: 1px solid #2bad2b;
-  color: white;
-}
-.mongo {
-  background-color: green;
-  border: 1px solid green;
-  color: white;
-}
-
 .projectContent p {
   margin-bottom: 1.5rem;
 }
@@ -272,12 +197,6 @@ button:hover {
   nav {
     width: 90%;
   }
-
-  .projectTag {
-    display: grid;
-    grid-template-columns: repeat(2, 8rem);
-  }
-
   #heroSection {
     flex-direction: column;
     /* text-align: center; */

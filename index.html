@@ -1,231 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Martin Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <!-- <header>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-      </nav>
-    </header> -->
 
-    <main>
-      <section id="heroSection">
-        <div id="workBanner">
-          <div class="imgContainer">
-            <img src="image/martinFace.png" alt="Martin Face" id="bannerImg" />
-          </div>
-          <div id="availabilityBanner">
-            <span id="specialDot"></span> Available to work
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martin Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+    </nav>
+  </header> -->
+
+  <main>
+    <section id="heroSection">
+      <div id="heroContent">
+        <h1> Hey, I'm Martin 👋</h1>
+        <p>
+
+          A full-stack developer crafting elegant solutions to complex problems.
+          I specialize in building modern web applications that combine beautiful
+          design with powerful functionality.
+        </p>
+        <button class="contactMeBtn">
+          <!-- <div class="icon"><img src="image/icons/email.svg" alt="" /></div> -->
+          Contact Me
+        </button>
+      </div>
+      <div id="workBanner">
+        <div class="imgContainer">
+          <img src="image/martinFace.png" alt="Martin Face" id="bannerImg" />
         </div>
-        <div id="heroContent">
-          <h1>Hey, I'm Martin</h1>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <div class="projectImg">
+          <img src="image/expensesApp.png" alt="Expenses App" />
+        </div>
+        <div class="projectContent">
+          <h3>My Expenses</h3>
           <p>
-            Full Stack Developer
-            <span class="highlight">ready to tackle your next big project </span
-            >. <br />
-            I turn complex requirements into sleek, efficient web solutions.
-            <br />
-            <span class="highlightP">
-              Bringing fresh ideas and clean code to every challenge.
-            </span>
+            A web application that allows users to efficiently track their
+            expenses and view real-time data on remaining balances after
+            expenditures.
           </p>
-          <button>
-            <div class="icon"><img src="image/icons/email.svg" alt="" /></div>
-            Contact Me
-          </button>
-        </div>
-      </section>
+          <div class="projectButtons">
+            <a href="https://github.com/dev-martin02/expenses" target="_blank">
+              <button>
+                <div class="icon">
+                  <img src="image/icons/github.svg" alt="githubIcon" />
+                </div>
+                Code
+              </button>
+            </a>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <div class="projectImg">
-            <img src="image/expensesApp.png" alt="Expenses App" />
-          </div>
-          <div class="projectContent">
-            <h3>My Expenses</h3>
-
-            <div class="projectTag">
-              <div class="projectBanner react">
-                <img
-                  src="image/icons/react.svg"
-                  class="icon"
-                  alt="react Icon"
-                />
-                React
-              </div>
-              <div class="projectBanner node">
-                <img src="image/icons/node.svg" class="icon" />
-                Nodejs
-              </div>
-              <div class="projectBanner mongo">
-                <img src="image/icons/mongodb.svg" class="icon" />
-                MongoDB
-              </div>
-              <div class="projectBanner tailwind">
-                <img src="image/icons/tailwind.svg" class="icon" />
-                Tailwind
-              </div>
-            </div>
-            <p>
-              A web application that allows users to efficiently track their
-              expenses and view real-time data on remaining balances after
-              expenditures.
-            </p>
-            <div class="projectButtons">
-              <a
-                href="https://github.com/dev-martin02/expenses"
-                target="_blank"
-              >
-                <button>
-                  <div class="icon">
-                    <img src="image/icons/github.svg" alt="githubIcon" />
-                  </div>
-                  Code
-                </button>
-              </a>
-
-              <a href="https://expensesapp2024.netlify.app/" target="_blank">
-                <button>
-                  <div class="icon">
-                    <img src="image/icons/eye.svg" alt="Preview Icon" />
-                  </div>
-                  Preview
-                </button>
-              </a>
-            </div>
+            <a href="https://expensesapp2024.netlify.app/" target="_blank">
+              <button>
+                <div class="icon">
+                  <img src="image/icons/eye.svg" alt="Preview Icon" />
+                </div>
+                Preview
+              </button>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="project">
-          <div class="projectImg">
-            <img src="image/planner.png" alt="Book Planner App" />
-          </div>
-          <div class="projectContent">
-            <h3>Book Planner</h3>
-            <div class="projectTag">
-              <div class="projectBanner react">
-                <img src="image/icons/react.svg" class="icon" alt="" />
-                React + Typescript
-              </div>
-
-              <div class="projectBanner node">
-                <img src="image/icons/supabase.svg" class="icon" /> Supabase
-              </div>
-            </div>
-            <p>
-              A productivity app designed to help users thoroughly engage with
-              books by asking critical questions to enhance comprehension and
-              extract key insights. Users can also take detailed chapter notes
-              and track their progress.
-            </p>
-            <div class="projectButtons">
-              <a
-                href="https://github.com/dev-martin02/bookPlanner"
-                target="_blank"
-              >
-                <button>
-                  <div class="icon">
-                    <img src="image/icons/github.svg" alt="githubIcon" />
-                  </div>
-                  Code
-                </button>
-              </a>
-              <a href="https://bookplanner.netlify.app/" target="_blank">
-                <button>
-                  <div class="icon">
-                    <img src="image/icons/eye.svg" alt="Preview Icon" />
-                  </div>
-                  Preview
-                </button>
-              </a>
-            </div>
+      <div class="project">
+        <div class="projectImg">
+          <img src="image/planner.png" alt="Book Planner App" />
+        </div>
+        <div class="projectContent">
+          <h3>Book Planner</h3>
+          <p>
+            A productivity app designed to help users thoroughly engage with
+            books by asking critical questions to enhance comprehension and
+            extract key insights. Users can also take detailed chapter notes
+            and track their progress.
+          </p>
+          <div class="projectButtons">
+            <a href="https://github.com/dev-martin02/bookPlanner" target="_blank">
+              <button>
+                <div class="icon">
+                  <img src="image/icons/github.svg" alt="githubIcon" />
+                </div>
+                Code
+              </button>
+            </a>
+            <a href="https://bookplanner.netlify.app/" target="_blank">
+              <button>
+                <div class="icon">
+                  <img src="image/icons/eye.svg" alt="Preview Icon" />
+                </div>
+                Preview
+              </button>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="project">
-          <div class="projectImg">
-            <img src="image/versaceNails.png" alt="Versace Nails App" />
-          </div>
-          <div class="projectContent">
-            <h3>Versace Nails</h3>
-            <div class="projectTag">
-              <div class="projectBanner react">
-                <img
-                  src="image/icons/react.svg"
-                  class="icon"
-                  alt="react Icon"
-                />
-                React
-              </div>
-
-              <div class="projectBanner tailwind">
-                <img src="image/icons/tailwind.svg" class="icon" />
-                Tailwind
-              </div>
-            </div>
-            <p>
-              Versace Nails is a beautifully designed website that offers a
-              seamless booking experience through an integrated appointment
-              system powered by Calendly. Effortlessly schedule your next beauty
-              session with ease and style.
-            </p>
-            <div class="projectButtons">
-              <a
-                href="https://github.com/dev-martin02/Versace-s_Nails"
-                target="_blank"
-              >
-                <button>
-                  <div class="icon">
-                    <img src="image/icons/github.svg" alt="githubIcon" />
-                  </div>
-                  Code
-                </button>
-              </a>
-              <a href="https://versacenails.netlify.app/" target="_blank">
-                <button>
-                  <div class="icon">
-                    <img src="image/icons/eye.svg" alt="Preview Icon" />
-                  </div>
-                  Preview
-                </button>
-              </a>
-            </div>
+      <div class="project">
+        <div class="projectImg">
+          <img src="image/versaceNails.png" alt="Versace Nails App" />
+        </div>
+        <div class="projectContent">
+          <h3>Versace Nails</h3>
+          <p>
+            Versace Nails is a beautifully designed website that offers a
+            seamless booking experience through an integrated appointment
+            system powered by Calendly. Effortlessly schedule your next beauty
+            session with ease and style.
+          </p>
+          <div class="projectButtons">
+            <a href="https://github.com/dev-martin02/Versace-s_Nails" target="_blank">
+              <button>
+                <div class="icon">
+                  <img src="image/icons/github.svg" alt="githubIcon" />
+                </div>
+                Code
+              </button>
+            </a>
+            <a href="https://versacenails.netlify.app/" target="_blank">
+              <button>
+                <div class="icon">
+                  <img src="image/icons/eye.svg" alt="Preview Icon" />
+                </div>
+                Preview
+              </button>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I'm a Full Stack Web Developer with a passion for building
-          user-friendly, dynamic applications. With expertise in both front-end
-          and back-end development, I enjoy transforming complex challenges into
-          efficient and scalable solutions. My journey into coding began with a
-          desire to create, and over time, I've developed a deep understanding
-          of web technologies like JavaScript, React, and Node.js.
-        </p>
-        <p>
-          Based in Paterson, NJ, I bring a strong work ethic, attention to
-          detail, and a continuous drive for learning to every project. Whether
-          it's developing responsive interfaces or optimizing server-side logic,
-          my goal is to craft experiences that are both functional and engaging.
-        </p>
-        <p>
-          When I'm not coding, I'm exploring new technologies, refining my
-          skills, and staying ahead of industry trends. I'm always excited to
-          take on new challenges and collaborate with others to bring innovative
-          ideas to life.
-        </p>
-      </section>
-    </main>
-  </body>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a Full Stack Web Developer with a passion for building
+        user-friendly, dynamic applications. With expertise in both front-end
+        and back-end development, I enjoy transforming complex challenges into
+        efficient and scalable solutions. My journey into coding began with a
+        desire to create, and over time, I've developed a deep understanding
+        of web technologies like JavaScript, React, and Node.js.
+      </p>
+      <p>
+        Based in Paterson, NJ, I bring a strong work ethic, attention to
+        detail, and a continuous drive for learning to every project. Whether
+        it's developing responsive interfaces or optimizing server-side logic,
+        my goal is to craft experiences that are both functional and engaging.
+      </p>
+      <p>
+        When I'm not coding, I'm exploring new technologies, refining my
+        skills, and staying ahead of industry trends. I'm always excited to
+        take on new challenges and collaborate with others to bring innovative
+        ideas to life.
+      </p>
+    </section>
+  </main>
+</body>
+
 </html>
