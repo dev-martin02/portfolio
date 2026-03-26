@@ -3,6 +3,7 @@ import { ThemeToggle } from './ThemeToggle';
 import { RepoCard } from './RepoCard';
 
 // Mock project data - maps repo names to descriptions and metadata
+console.log(getRepoDetails)
 export const projectMockData: Record<string, { description: string; tech: string[]; highlight?: string }> = {
   'portfolio': {
     description: 'My personal portfolio website built with Next.js 15 and Tailwind CSS. Features dark mode, responsive design, and GitHub API integration to showcase my latest work.',
